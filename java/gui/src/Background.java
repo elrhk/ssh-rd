@@ -109,11 +109,15 @@ public class Background implements Runnable {
 		boolean ios5 = (null != dict.objectForKey("ios5"));
 		boolean ios3 = (null != dict.objectForKey("ios3"));
 		boolean ios43 = (null != dict.objectForKey("ios43"));
+		boolean ios7 = (null != dict.objectForKey("ios7"));
 		String norPatch = "nor5.patch.json";
 		String kernelPatch = "kernel5.patch.json";
 		String wtfPatch = "wtf.patch.json";
 	
-		if (!ios5) {
+		if (ios7) {
+			norPatch = "nor7.patch.json";
+			kernelPatch = "kernel7.patch.json";
+		} else if (!ios5) {
 			norPatch = (device.isWtf() && ios3) ? wtfPatch : device.isArmV6() ? "nor_armv6.patch.json" : "nor.patch.json";
 			kernelPatch = device.isArmV6() ? 
 						( ios3 ? "kernel3.patch.json": "kernel_armv6.patch.json" ) : 
@@ -260,7 +264,7 @@ public class Background implements Runnable {
 					gui.error("Can't get tar file size!");
 					return null;
 				}
-				extend = (long)(1.05 * (double)(tarLength));
+				extend = (long)(1.20 * (double)(tarLength));
 				if (!Jsyringe.add_ssh_to_ramdisk(decryptedPath, sshTarFile, extend)) {
 					gui.error("Adding ssh to ramdisk failed!");
 					return null;
@@ -483,7 +487,7 @@ public class Background implements Runnable {
 		}
 		
 		String ibecFile = null;
-		if (null != dict.objectForKey("ios5")) {
+		if (null != dict.objectForKey("ios5") || null != dict.objectForKey("ios7")) {
 			String ibecName = String.format("iBEC.%s.RELEASE.dfu", device.getAp());
 			String ibecPath =  dfuFolder.concat(ibecName);
 			

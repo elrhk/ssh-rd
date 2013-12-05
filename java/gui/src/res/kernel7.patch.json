@@ -1,0 +1,87 @@
+{
+    "patches":
+    [
+        {
+            "patternBytes": "0a 95 05 d0 04 22 b9 f1 00 0f 23 d1 f8 68 08 b3",
+            "patchBytes": "e0",
+            "patchOffset": "3",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "Kernel 01"
+        },
+        {
+            "patternBytes": "15 f0 01 0f 01 f0 22 80 02 e0 25 46 00 e0 25 46",
+            "patchBytes": "00 bf 00 bf",
+            "patchOffset": "4",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "Kernel 02"
+        },
+        {
+            "patternBytes": "01 91 bb f1 00 0f 00 f0 ba 80 6f f5",
+            "patchBytes": "c0 46 c0 46",
+            "patchOffset": "6",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "Kernel 03"
+        },
+        {
+            "patternBytes": "91 42 02 bf 0d f5 46 7d bd e8 00 0d f0 bd 02 f0",
+            "patchBytes": "11 46",
+            "patchOffset": "0",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "Kernel 04"
+        },
+        {
+            "patternBytes": "10 F4 00 2F 15 D1 BA 69",
+            "patchBytes": "00 BF 01 22",
+            "patchOffset": "4",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "MobileSubstrate Fix"
+        },
+        {
+            "patternBytes": "2F 70 72 69 76 61 74 65 2F 76 61 72 2F 6D 6F 62 69 6C 65 2F 41 70 70 6C 69 63 61 74 69 6F 6E 73",
+            "patchBytes": "2F 70 72 69 76 61 74 65 2F 76 61 72 2F 6D 6F 62 69 6C 65 2F 58 58 58 58 58 58 58 58 58 58 58 58",
+            "patchOffset": "0",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "Sandbox patch 01"
+        },
+        {
+            "patternBytes": "63 6F 6D 2E 61 70 70 6C 65 2E 70 72 69 76 61 74 65 2E 73 65 63 75 72 69 74 79 2E 63 6F 6E 74 61 69 6E 65 72 2D 72 65 71 75 69 72 65 64",
+            "patchBytes": "63 6F 6D 2E 61 70 70 6C 65 2E 70 72 69 76 61 74 65 2E 73 65 63 75 72 69 74 79 2E 78 78 78 78 78 78 78 78 78 2D 72 65 71 75 69 72 65 64",
+            "patchOffset": "0",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "Sandbox patch 02"
+        },
+        {
+            "patternBytes": "78 44 00 68 00 78 10 F0 04 0F",
+            "patchBytes": "04 20",
+            "patchOffset": "4",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "Sandbox patch 03"
+        },
+        {
+            "patternBytes": "00 28 18 BF 01 20 C1 F8 24 0F",
+            "patchBytes": "01 20 01 20",
+            "patchOffset": "2",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "DebuggerEnabled"
+        },
+        {
+            "patternBytes": "78 44 D0 F8 24 0F 70 47",
+            "patchBytes": "01 20 01 20",
+            "patchOffset": "2",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "_PE_i_can_has_debugger"
+        }
+        
+        
+    ]
+}

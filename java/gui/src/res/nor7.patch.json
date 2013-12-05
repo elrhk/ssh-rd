@@ -1,0 +1,45 @@
+{
+    "patches":
+    [
+        {
+            "patternBytes": "29 46 32 46 ff f7 cc fd 00 21 00 28",
+            "patchBytes": "00 20 18 60",
+            "patchOffset": "4",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "iBSS Signature Check"
+        },
+        {
+            "patternBytes": "29 46 32 46 ff f7 74 fc 00 21 00 28",
+            "patchBytes": "00 20 18 60",
+            "patchOffset": "4",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "iBEC Signature Check"
+        },
+        {
+            "patternBytes": "29 46 32 46 FF F7 9E FC 00 21 00 28 0C 91",
+            "patchBytes": "00 20 18 60",
+            "patchOffset": "4",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "iBoot Signature Check"
+        },
+        {
+            "patternBytes": "00 2D 7E 4C 18 BF",
+            "patchBytes": "C0 46 C0 46 C0 46",
+            "patchOffset": "0",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "iBoot BootArgs Conditional"
+        },
+        {
+            "patternBytes": "72 64 3D 6D 64 30 20 6E 61 6E 64 2D 65 6E 61 62 6C 65 2D 72 65 66 6F 72 6D 61 74 3D 31 20 2D 70 72 6F 67 72 65 73 73",
+            "patchBytes": "72 64 3D 6D 64 30 20 61 6D 66 69 3D 30 78 66 66 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20",
+            "patchOffset": "0",
+            "secondMatchCorrelation": "1.0",
+            "adjustedSecondMatchCorrelation": "1.0",
+            "comment": "iBoot BootArgs"
+        }
+    ]
+}
