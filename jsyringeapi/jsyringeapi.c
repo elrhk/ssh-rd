@@ -39,7 +39,7 @@ JNIEXPORT jboolean JNICALL Java_Jsyringe_wait_1for_1connect
 {
 	jboolean jresult = JNI_FALSE;
 	if (g_syringe_client != NULL) {
-		irecv_close(&g_syringe_client);
+		irecv_close(g_syringe_client);
 	}
 	if (0 == irecv_open(&g_syringe_client) && g_syringe_client->mode == kDfuMode) {
 		if (irecv_get_device(g_syringe_client, &g_syringe_device) == IRECV_E_SUCCESS) {
@@ -49,7 +49,7 @@ JNIEXPORT jboolean JNICALL Java_Jsyringe_wait_1for_1connect
 	}
 cleanup:
 	if (g_syringe_client != NULL)
-		irecv_close(&g_syringe_client);
+		irecv_close(g_syringe_client);
 	return jresult;
 }
 
@@ -192,7 +192,7 @@ int tethered_boot(const char *ibssFile, const char *ibecFile, const char *kernel
 cleanup:
 	fflush(stderr);
 	if (g_syringe_client) {
-		irecv_close(&g_syringe_client);
+		irecv_close(g_syringe_client);
 		g_syringe_client = NULL;
 	}
 	
@@ -305,7 +305,7 @@ JNIEXPORT jint JNICALL Java_Jsyringe_exploit
 cleanup:
 	fflush(stderr);
 	if (g_syringe_client) {
-		irecv_close(&g_syringe_client);
+		irecv_close(g_syringe_client);
 		g_syringe_client = NULL;
 	}
 	
