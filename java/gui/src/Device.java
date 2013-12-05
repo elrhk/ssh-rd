@@ -15,6 +15,7 @@ public final class Device {
 		supportedDevices.add(new DeviceProps("iPhone 3G", "n82ap", 0x8900, 0x3100));
 		supportedDevices.add(new DeviceProps("iPhone 3GS", "n88ap", 0x8920, 0x8920));
 		supportedDevices.add(new DeviceProps("iPhone 4 (GSM)", "n90ap", 0x8930, 0x8930));
+		supportedDevices.add(new DeviceProps("iPhone 4 (GSM) Rev A", "n90bap", 0x8930, 0x4008930));
 		supportedDevices.add(new DeviceProps("iPhone 4 (CDMA)", "n92ap", 0x8930, 0x6008930));
 		supportedDevices.add(new DeviceProps("iPod Touch 1G", "n45ap", 0x8900, 0x2100));
 		supportedDevices.add(new DeviceProps("iPod Touch 2G", "n72ap", 0x8720, 0x8720));
