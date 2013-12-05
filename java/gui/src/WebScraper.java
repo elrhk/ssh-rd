@@ -77,6 +77,7 @@ public class WebScraper {
 		categoryNameFromDevId.put("n82ap", "iPhone_3G");
 		categoryNameFromDevId.put("n88ap", "iPhone_3GS");
 		categoryNameFromDevId.put("n90ap", "iPhone_4_GSM");
+		categoryNameFromDevId.put("n90bap", "iPhone 4 (GSM) Rev A");
 		categoryNameFromDevId.put("n92ap", "iPhone_4_CDMA");
 		categoryNameFromDevId.put("n45ap", "iPod_touch");
 		categoryNameFromDevId.put("n72ap", "iPod_touch_2G");
@@ -175,6 +176,7 @@ public class WebScraper {
 		map.put("n82ap", "iPhone1,2");
 		map.put("n88ap", "iPhone2,1");
 		map.put("n90ap", "iPhone3,1");
+		map.put("n90bap", "iPhone3,2");
 		map.put("n92ap", "iPhone3,3");
 		map.put("n94ap", "iPhone4,1");
 		map.put("n45ap", "iPod1,1");
