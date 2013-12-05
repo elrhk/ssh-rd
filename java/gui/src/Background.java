@@ -450,7 +450,7 @@ public class Background implements Runnable {
 		String[] verComponents = iosVersion.split("\\.");
 		String iosVerMajor = verComponents[0];
 		dict.put("ios", iosVerMajor);
-		dict.put("ios" + iosVerMajor, "yes"); //ios5, ios4, ios3
+		dict.put("ios" + iosVerMajor, "yes"); //ios5, ios4, ios3, ios7
 		String iosVerMinor = "0";
 		if (verComponents.length > 1) {
 			iosVerMinor = verComponents[1];
